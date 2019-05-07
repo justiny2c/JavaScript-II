@@ -31,8 +31,9 @@ function getLength(arr, cb) {
 }
 
 getLength(items, function(length){
-  console.log(length)
+  console.log(length) 
 })
+
 
 function last(arr, cb) {
   return cb(arr[arr.length - 1])
