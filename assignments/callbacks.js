@@ -65,8 +65,13 @@ multiplyNums(4, 8, function(product){
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-  return cb(item == list[i])
-}
+
+  if (list.includes(item)){
+        return cb(true)}
+        else{
+        return cb(false)}
+    }
+  
 
 contains("Pencil", items, function(thing){
   return thing
